@@ -21,10 +21,8 @@ jobs:
       - name: Update mirror
         run: |
           shopt -s extglob
-          rm -rf !(.git/*|.github/*|README.md) repo/gitignore/*
-          shopt -u extglob
-          ls
-          cp -r upstream/extensions/gitignore repo
+          rm -rf !(.git/*|.github/*|README.md) repo/*
+          cp -r upstream/extensions/gitignore/. repo/
           cd repo
           git config user.name 'github-actions[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
