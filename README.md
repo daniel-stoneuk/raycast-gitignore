@@ -2,7 +2,7 @@
 
 # raycast-gitignore
 
-Mirror of Gitignore Extension from [raycast/extensions](https://github.com/raycast/extensions). Please create Issues and Pull Requests in that repository.
+Mirror of Raycast [Gitignore Extension](https://www.raycast.com/daniel-stoneuk/gitignore) source. Please create Issues and Pull Requests in [raycast/extensions](https://github.com/raycast/extensions).
 
 | Search for languages           | Combine to create .gitignore   |
 | ------------------------------ | ------------------------------ |
