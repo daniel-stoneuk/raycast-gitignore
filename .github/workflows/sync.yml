@@ -20,8 +20,10 @@ jobs:
             path: upstream
       - name: Update mirror
         run: |
+          cd ./repo
           shopt -s extglob
-          rm -rf !(.git/*|.github/*|README.md) ./repo/*
+          rm -rf !(.git/*|.github/*|README.md) *
+          cd ..
           cp -r ./upstream/extensions/gitignore/. ./repo/
           cd ./repo
           git config user.name 'github-actions[bot]'
