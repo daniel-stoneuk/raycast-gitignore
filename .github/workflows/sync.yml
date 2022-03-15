@@ -20,7 +20,7 @@ jobs:
             path: upstream
       - name: Update mirror
         run: |
-          find repo -type f -not \( -path "./.git/*" -o -path "./.github/*" -o -name "README.md" \)
+          find repo -type f -not \( -path "./.git/*" -o -path "./.github/*" -o -name "README.md" \) -delete
           cp -r upstream/extensions/gitignore/. repo/
           cd repo
           git config user.name 'github-actions[bot]'
